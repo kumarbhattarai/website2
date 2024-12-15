@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="js/wow.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-slate-600 min-h-full">
+
+    <!-- Navbar -->
+    <navbar class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
+        <ul class="flex items-center justify-between px-6 py-4">
+            <li>
+                <a href="#">
+                    <img class="logo w-10 h-10 rounded-full animate__animated animate__bounce absolute left-[5vw] top-[16px]" src="logo_trial (1).png" alt="Logo">
+                </a>
+            </li>
+            
+            <!-- Right-aligned navigation links -->
+            <div class="flex gap-14 ml-auto">
+                <li class="hideOnMob"><a href="#">Home</a></li>
+                <li class="hideOnMob"><a href="#">Gallery</a></li>
+                <li class="hideOnMob"><a href="#">Projects</a></li>
+                <li class="hideOnMob"><a href="#">About me</a></li>
+            
+                <li onclick="showSidebar()" class="hideOnPc">
+                    <a href="#" class="flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    
+        <!-- Sidebar -->
+        <ul class="sidebar fixed top-0 right-0 h-screen w-[0px] flex flex-col items-start justify-start space-y-2 nav">
+            <li onclick="closeBar()">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" style="margin-left:17vw;margin-top:2vh">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About me</a></li>
+        </ul>
+    </navbar>
+
+    <!-- Image Container -->
+    <div class="relative bg-cover bg-center p-[30vw] h-screen" style="background-image: url('img17.jpg');">
+        <h1 id="scroll-hide" class="onpc absolute bottom-20 lg:bottom-48 left-6 text-white text-4xl font-bold animate__animated animate__fadeInUp">
+            Welcome to My Homepage
+        </h1>
+    </div>
+
+    <div>
+        
+    </div>
+    <!-- Main Content -->
+    <div class="p-0">
+        <h1 class="text-3xl font-bold underline">Hello World!</h1>
+        <h1 class="animate__animated animate__bounce">An animated element</h1>
+    </div>
+
+    <script>
+        new WOW().init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
