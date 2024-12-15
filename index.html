@@ -10,17 +10,20 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-slate-600 min-h-full">
+<body class="bg-slate-800 min-h-full">
 
     <!-- Navbar -->
     <navbar class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
         <ul class="flex items-center justify-between px-6 py-4">
             <li>
                 <a href="#">
-                    <img class="logo w-10 h-10 rounded-full animate__animated animate__bounce absolute left-[5vw] top-[16px]" src="logo_trial (1).png" alt="Logo">
+                    <img class="logo w-10 h-10 rounded-full animate__animated animate__bounce absolute left-[5vw] top-[19px]" src="Logo4.png" alt="Logo">
                 </a>
             </li>
             
@@ -33,7 +36,7 @@
             
                 <li onclick="showSidebar()" class="hideOnPc">
                     <a href="#" class="flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg>
                     </a>
@@ -59,7 +62,7 @@
 
     <!-- Image Container -->
     <div class="relative bg-cover bg-center p-[30vw] h-screen" style="background-image: url('img17.jpg');">
-        <h1 id="scroll-hide" class="onpc absolute bottom-[20px] lg:bottom-48 left-6 text-white text-4xl font-bold animate__animated animate__fadeInUp">
+        <h1 id="scroll-hide" class="onpc absolute bottom-[55px] lg:bottom-48 left-6 text-4xl text-slate-200 font-bold animate__animated animate__fadeInUp">
             Welcome to My Homepage
         </h1>
     </div>
@@ -68,9 +71,16 @@
         
     </div>
     <!-- Main Content -->
-    <div class="p-0">
-        <h1 class="text-3xl font-bold underline">Hello World!</h1>
-        <h1 class="animate__animated animate__bounce">An animated element</h1>
+     <div class="ml-2 mr-2">
+    <div class="text-slate-200 mt-10">
+        <div class="text-2xl font-bold underline decoration-slate-400 flex align-center justify-center">
+            <a href="#">About me</a>
+        </div>
+        <p class="mt-2 animate__animated animate__backInLeft text-center">
+            Hi, I am Kumar Bhattarai. Currently Persuing my bachelor degree in IT sector and interested in nature and culture. To know more <a class="text-slate-400" href="about.html">click here</a>  
+        </p>
+    </div class="flex align-center justify-center">
+<iframe src="gallery/index.html" width="100%" height="600px" frameborder="0"></iframe>
     </div>
 
     <script>
