@@ -1,0 +1,28 @@
+
+body{
+padding-left: 1rem;
+padding-right: 1rem;
+}
+    #ab::-webkit-scrollbar{
+display: none;
+}
+
+@media(max-width: 400px) {
+    img {
+        width: 88vw !important;
+        height: 35vh !important; /* Responsive width for small devices */
+    }
+    #ab{
+        width: 100% !important;
+    }
+}
+img {
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+img:hover {
+ filter: grayscale(0);
+ cursor: pointer;
+ transform: scale(1.1);
+}
+/* [@media(max-width:400px)]:w-[66vw] [@media(max-width:400px)]:h-[30vh] */
