@@ -16,6 +16,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/01/03/09/20250103094757-JA0K5ZI6.js"></script>
+    
 </head>
 
 <body class="bg-slate-800 min-h-full">
@@ -24,47 +28,68 @@
     <navbar class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
         <ul class="flex items-center justify-between px-6 py-4">
             <li>
-                <a href="#">
-                    <img class="logo w-10 h-10 rounded-full animate__animated animate__bounce absolute left-[5vw] top-[19px]" src="logo4.png" alt="Logo">
+                <a href="error.html" target="_blank">
+                    <img class="logo w-10 h-10 rounded-full animate__animated animate__bounce absolute left-[5vw] top-[19px]" src="logok.png" alt="Logo">
                 </a>
             </li>
             
-            <!-- Right-aligned navigation links -->
+    
             <div class="flex gap-14 ml-auto">
-                
-                 <li class="hideOnMob"><a href="#">Home
-                <lord-icon
-                src="https://cdn.lordicon.com/rpvomrgr.json"
-                trigger="hover"
-                state="hover-partial-roll"
-                style="width:30px;height:30px">
-            </lord-icon> </a></li>
+                 <li class="hideOnMob"><a href="index.html">
+                    <div class="ml-2">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/rpvomrgr.json"
+                        trigger="hover"
+                        state="hover-partial-roll"
+                        style="width:30px;height:30px">
+                    </lord-icon> </div>
+                    Home
+                    
+             </a></li>
+
                 <li class="hideOnMob"><a href="gallery.html">
-                    gallery
-                    <lord-icon
-                    src="https://cdn.lordicon.com/rdabbukg.json"
-                    trigger="hover"
-                    style="width:30px;height:30px">
-                </lord-icon>
+                    <div class="ml-3">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/rdabbukg.json"
+                        trigger="hover"
+                        style="width:30px;height:30px">
+                    </lord-icon></div>
+                    Gallery
+          
             </a></li>
+
                 <li class="hideOnMob"><a href="project.html">
-                    Projects
-                    <lord-icon
-    src="https://cdn.lordicon.com/ifyskbjd.json"
-    trigger="in"
-    delay="1000"
-    state="in-unfold"
-    style="width:30px;height:30px">
-</lord-icon>
+                    <div class="ml-6">
+                        <lord-icon
+        src="https://cdn.lordicon.com/ifyskbjd.json"
+        trigger="in"
+        delay="1000"
+        state="in-unfold"
+        style="width:30px;height:30px">
+    </lord-icon></div>
+                    Projects 
                 </a></li>
                 <li class="hideOnMob" onclick="scrollDown()"><a href="#">
+                    <div class="ml-6">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/iiudwewg.json"
+                        trigger="hover"
+                        style="width:30px;height:30px">
+                    </lord-icon> </div>
                     About me
-                    <lord-icon
-                    src="https://cdn.lordicon.com/iiudwewg.json"
-                    trigger="hover"
-                    style="width:30px;height:30px">
-                </lord-icon> 
+ 
                 </a></li>
+
+                <!-- <li class="hideOnMob"><a href="bot.html">
+                    <div class="ml-5">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/motnbmtz.json"
+                        trigger="hover"
+                        style="width:30px;height:30px">
+                    </lord-icon> </div>
+                    Chatbot
+ 
+                </a></li> -->
             
                 <li onclick="showSidebar()" class="hideOnPc" >
                     <a href="#" class="flex items-center justify-center">
@@ -85,16 +110,17 @@
                     </svg>
                 </a>
             </li>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="project.html">Projects</a></li>
             <li onclick="closeBar(); scrollDown();"><a href="#">About me</a></li>
+            <!-- <li><a href="bot.html">Chatbot</a></li> -->
         </ul>
     </navbar>
 
     <!-- Image Container -->
     <div class="relative bg-cover bg-center p-[30vw] h-screen" style="background-image: url('img17.jpg');">
-        <h1 id="scroll-hide" class="onpc absolute bottom-[55px] lg:bottom-48 left-6 text-4xl text-slate-300 font-bold animate__animated animate__fadeInUp">
+        <h1 id="scroll-hide" class="onpc absolute bottom-[40px] lg:bottom-48 left-6 text-4xl text-slate-300 font-bold animate__animated animate__fadeInUp">
             Welcome to My Homepage
         </h1>
     </div>
@@ -139,8 +165,10 @@
 </lord-icon>
                 After completing my high school graduation, I passed the CSIT entrance exam and continued exploring computers at the bachelor's level. I am currently pursuing a bachelor's degree in Information Technology from Bhaktapur Multiple Campus. I chose CSIT as it is a renowned course among science faculties and offers the flexibility to pursue further studies in physics as well. I am currently focused on enhancing my skills and thinking out of the box."</span>
           </div>
-          
-    </div class="flex align-center justify-center">
+          <div class="flex align-center justify-center">
+           <p>Chat with <a href="bot.html" target="_blank" class="text-cyan-700 font-bold text-xl"> chatbot</a> to know more.</p>
+                </div>
+    <div class="flex align-center justify-center">
 <iframe src="photos/index2.html" width="100%" height="600px" frameborder="0"></iframe>
     </div>
 
@@ -154,35 +182,32 @@
           <p class="text-lg font-semibold"> follow me on</p>
           <div>
           <span class="flex items-center justify-center space-x-4">
-          <a href="https://www.facebook.com/kumar.bhattarai.9216"><lord-icon
+          <a href="https://www.facebook.com/kumar.bhattarai.9216" target="_blank"><lord-icon
             src="https://cdn.lordicon.com/xowsaqcr.json"
             trigger="hover"
             state="hover-draw"
             style="width:40px;height:40px">
         </lord-icon></a>
-        <a href="https://www.instagram.com/kumarbhattarai_analien/profilecard/?igsh=MzdjZ21vYmgxNmF1"><lord-icon
+        <a href="https://www.instagram.com/kumarbhattarai_analien/profilecard/?igsh=MzdjZ21vYmgxNmF1" target="_blank"><lord-icon
             src="https://cdn.lordicon.com/dbugezxr.json"
             trigger="hover"
             state="hover-rotate"
             style="width:40px;height:40px">
         </lord-icon></a>
 
-        <a href="https://www.linkedin.com/public-profile/settings"><lord-icon
+        <a href="https://www.linkedin.com/public-profile/settings" target="_blank"><lord-icon
             src="https://cdn.lordicon.com/kozzgyfy.json"
             trigger="hover"
             style="width:40px;height:40px">
         </lord-icon></a>
 
-        <a href="https://github.com/kumarbhattarai"><img src="github.png" alt="error" width="40px" height="40px"></a>
+        <a href="https://github.com/kumarbhattarai" target="_blank"><img src="github.png" alt="error" width="40px" height="40px"></a>
     </span>
 </div>
         </div>
         <div>
             <p> Or <br> Send your <a href="form.html" class="text-blue-300">contact details</a></p>
         </div>
-        <div class="mt-2 text-cyan-300">
-        <a href="https://lordicon.com/">Animated Icons by Lordicon.com</a>
-    </div>
     </footer>
     <script>
         new WOW().init();
