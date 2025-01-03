@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://kit.fontawesome.com/e6f520f290.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music">
+<nav>
+    <div class="change">
+        <i class="fa-solid fa-angle-left"></i>
+    </div>
+    <div class="change">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <!-- <div class="change">
+        <i class="fa-solid fa-angle-right"></i>
+    </div> -->
+
+</nav>
+<img src="mlogo2.jpg" class="song">
+<h2>Night Changes</h2>
+<p>One Direction</p>
+<audio id="song">
+    <source id="audioSource" src="One_Direction_-_Night_Changes_(Lyrics)(128k).mp3" type="audio/mpeg">
+
+</audio>
+<input type="range" value="0" id="progress">
+<div class="control">
+    <div onclick="backward()"><i class="fa-solid fa-backward"></i></div>
+   <div onclick="playpause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
+    <div onclick="forward()"> 
+        <i class="fa-solid fa-forward"></i></div>
+</div>
+        </div>
+    </div>
+    <script src="script4.js"></script>
+</body>
+</html>

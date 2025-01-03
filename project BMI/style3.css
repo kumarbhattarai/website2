@@ -1,0 +1,125 @@
+
+*{
+    margin: 1px;
+    padding: 8px;
+}
+body{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+font-family: "Open Sans", sans-serif;
+    background-color: rgb(30, 27, 27);
+    color:rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 85vh;
+}
+.container{
+    margin-top: 10vh;
+    background-color:white;
+    border-radius:85px 20px;
+    box-shadow: 
+    0 0 20px rgba(173, 88, 31, 0.8),
+    0 0 30px rgba(108, 119, 11, 0.8),
+    0 0 60px rgba(112, 90, 35, 0.8),
+    0 0 100px rgba(44, 4, 114, 0.8),
+    0 0 150px rgba(129, 50, 239, 0.8);
+}
+.container h1{
+    text-align: center;
+}
+.content{
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.gender{
+    background-color:aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.age label{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+.age input{
+    display: block;
+    text-align: center;
+    margin:auto;
+    outline:none;
+    border:none;
+    width: 100px;
+    border-bottom: 3px solid;
+    padding-top: 10px;
+}
+.weight label{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+.weight input{
+    display: flex;
+    /* margin: auto; */
+    text-align: center;
+    outline:none;
+    border:none;
+    width: 100px;
+    border-bottom: 3px solid;
+    padding: 2px;
+}
+.height label{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    background-color: white;
+}
+.height input{
+    display: block;
+    /* margin: auto; */
+    text-align: center;
+    outline:none;
+    border:none;
+    width: 100px;
+    border-bottom: 3px solid;
+    padding: 2px;
+}
+  .toflex{
+    display: flex;
+  }
+
+.calculate2{
+
+    cursor:pointer;
+    background-color: rgb(14, 13, 13);
+    color: white;
+    border-radius: 20%;
+    width: 100%;
+}
+p{
+    text-align: center;
+}
+.number{
+    font-size:x-large;
+    font-weight: bolder;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 30%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 226, 224);
+}
+.message{
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    height: 5vh;
+}

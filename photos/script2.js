@@ -24,25 +24,24 @@ if (isMobileDevice()) {
 //     // img.style.height="40vh" // Make images full width
 //   }
 
-  // Optionally, adjust container style for mobile
   container.style.width = "100%";
-  container.style.overflowX = "scroll"; // Ensure horizontal scrolling if needed
+  container.style.overflowX = "scroll"; 
 }
 
-// Add wheel event listener to container
+
 container.addEventListener("wheel", (evt) => {
   evt.preventDefault();
   container.style.scrollBehavior = "auto";
   container.scrollLeft += evt.deltaY;
 });
 
-// Add click event listener to next button
+
 next.addEventListener("click", () => {
   container.style.scrollBehavior = "smooth";
   container.scrollLeft += 1000;
 });
 
-// Add click event listener to back button
+
 back.addEventListener("click", () => {
   container.style.scrollBehavior = "smooth";
   container.scrollLeft -= 1000;

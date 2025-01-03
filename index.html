@@ -10,10 +10,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
 
 <body class="bg-slate-800 min-h-full">
@@ -29,12 +31,42 @@
             
             <!-- Right-aligned navigation links -->
             <div class="flex gap-14 ml-auto">
-                <li class="hideOnMob"><a href="#">Home</a></li>
-                <li class="hideOnMob"><a href="#">Gallery</a></li>
-                <li class="hideOnMob"><a href="#">Projects</a></li>
-                <li class="hideOnMob"><a href="#">About me</a></li>
+                
+                 <li class="hideOnMob"><a href="#">Home
+                <lord-icon
+                src="https://cdn.lordicon.com/rpvomrgr.json"
+                trigger="hover"
+                state="hover-partial-roll"
+                style="width:30px;height:30px">
+            </lord-icon> </a></li>
+                <li class="hideOnMob"><a href="gallery.html">
+                    gallery
+                    <lord-icon
+                    src="https://cdn.lordicon.com/rdabbukg.json"
+                    trigger="hover"
+                    style="width:30px;height:30px">
+                </lord-icon>
+            </a></li>
+                <li class="hideOnMob"><a href="project.html">
+                    Projects
+                    <lord-icon
+    src="https://cdn.lordicon.com/ifyskbjd.json"
+    trigger="in"
+    delay="1000"
+    state="in-unfold"
+    style="width:30px;height:30px">
+</lord-icon>
+                </a></li>
+                <li class="hideOnMob" onclick="scrollDown()"><a href="#">
+                    About me
+                    <lord-icon
+                    src="https://cdn.lordicon.com/iiudwewg.json"
+                    trigger="hover"
+                    style="width:30px;height:30px">
+                </lord-icon> 
+                </a></li>
             
-                <li onclick="showSidebar()" class="hideOnPc">
+                <li onclick="showSidebar()" class="hideOnPc" >
                     <a href="#" class="flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -45,24 +77,24 @@
         </ul>
     
         <!-- Sidebar -->
-        <ul class="sidebar fixed top-0 right-0 h-screen w-[0px] flex flex-col items-start justify-start space-y-2 nav">
+        <ul class="sidebar fixed top-0 right-0 h-screen w-[0px] flex flex-col items-start justify-start space-y-2 text-slate-300 nav">
             <li onclick="closeBar()">
                 <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000" style="margin-left:17vw;margin-top:2vh">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999" style="margin-left:17vw;margin-top:2vh">
                         <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
                     </svg>
                 </a>
             </li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About me</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li onclick="closeBar(); scrollDown();"><a href="#">About me</a></li>
         </ul>
     </navbar>
 
     <!-- Image Container -->
     <div class="relative bg-cover bg-center p-[30vw] h-screen" style="background-image: url('img17.jpg');">
-        <h1 id="scroll-hide" class="onpc absolute bottom-[55px] lg:bottom-48 left-6 text-4xl text-slate-200 font-bold animate__animated animate__fadeInUp">
+        <h1 id="scroll-hide" class="onpc absolute bottom-[55px] lg:bottom-48 left-6 text-4xl text-slate-300 font-bold animate__animated animate__fadeInUp">
             Welcome to My Homepage
         </h1>
     </div>
@@ -74,15 +106,84 @@
      <div class="ml-2 mr-2">
     <div class="text-slate-200 mt-10">
         <div class="text-2xl font-bold underline decoration-slate-400 flex align-center justify-center">
-            <a href="#">About me</a>
+            About me
         </div>
         <p class="mt-2 animate__animated animate__backInLeft text-center">
-            Hi, I am Kumar Bhattarai. Currently Persuing my bachelor degree in IT sector and interested in nature and culture. To know more <a class="text-slate-400" href="about.html">click here</a>  
+            Hi, I am Kumar Bhattarai, currently pursuing a bachelor's degree in Information Technology. And I am interested in nature and learning about diverse cultures.
         </p>
+        <div class="text-2xl font-bold underline decoration-slate-400 flex align-center justify-center mt-2">
+            Academics
+        </div>
+        <div class="flex flex-wrap justify-between  p-4">
+            <span class="w-full sm:w-[33%] h-max p-2">
+                <lord-icon
+    src="https://cdn.lordicon.com/aksvbzmu.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+    </lord-icon>
+            I completed my SEE from Lalbandi, Sarlahi in 2020, where I chose Accountancy as an          optional subject. Despite having little knowledge about computers, my interest in them          grew rapidly, prompting me to take Computer Science as an optional subject in +2. </span>
+
+            <span class="w-full sm:w-[33%] h-max mt-2 p-2">
+                <lord-icon
+    src="https://cdn.lordicon.com/aksvbzmu.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-icon>
+                I completed my high school graduation from Sinamangal, Kathmandu, taking the science stream with Computer Science as an optional subject. I learned C programming along with some basics of PHP and databases. Due to my limited knowledge of computers, I found +2 challenging and spent most of my time trying to grasp the basics. However, I continued my studies in computer languages during my bachelor's degree.</span>
+
+            <span class="w-full sm:w-[33%] h-max mt-2 p-2">
+                <lord-icon
+    src="https://cdn.lordicon.com/aksvbzmu.json"
+    trigger="hover"
+    style="width:30px;height:30px">
+</lord-icon>
+                After completing my high school graduation, I passed the CSIT entrance exam and continued exploring computers at the bachelor's level. I am currently pursuing a bachelor's degree in Information Technology from Bhaktapur Multiple Campus. I chose CSIT as it is a renowned course among science faculties and offers the flexibility to pursue further studies in physics as well. I am currently focused on enhancing my skills and thinking out of the box."</span>
+          </div>
+          
     </div class="flex align-center justify-center">
 <iframe src="photos/index2.html" width="100%" height="600px" frameborder="0"></iframe>
     </div>
 
+    <footer class="footer bg-slate-900 rounded-lg text-slate-100 p-[3vw] text-center mt-[3vh]">
+
+        
+        
+        <div>
+            <h2 class="text-2xl font-bold">Contacts</h2>
+          <p>You can contact me anytime through my  <a class="nav-link active" style="color: rgb(77, 22, 229);" href="https://www.instagram.com/kumarbhattarai_analien/profilecard/?igsh=MzdjZ21vYmgxNmF1" target="_blank">social media</a> or can mail me on eureshbhattarai666@gmail.com</p>
+          <p class="text-lg font-semibold"> follow me on</p>
+          <div>
+          <span class="flex items-center justify-center space-x-4">
+          <a href="https://www.facebook.com/kumar.bhattarai.9216"><lord-icon
+            src="https://cdn.lordicon.com/xowsaqcr.json"
+            trigger="hover"
+            state="hover-draw"
+            style="width:40px;height:40px">
+        </lord-icon></a>
+        <a href="https://www.instagram.com/kumarbhattarai_analien/profilecard/?igsh=MzdjZ21vYmgxNmF1"><lord-icon
+            src="https://cdn.lordicon.com/dbugezxr.json"
+            trigger="hover"
+            state="hover-rotate"
+            style="width:40px;height:40px">
+        </lord-icon></a>
+
+        <a href="https://www.linkedin.com/public-profile/settings"><lord-icon
+            src="https://cdn.lordicon.com/kozzgyfy.json"
+            trigger="hover"
+            style="width:40px;height:40px">
+        </lord-icon></a>
+
+        <a href="https://github.com/kumarbhattarai"><img src="github.png" alt="error" width="40px" height="40px"></a>
+    </span>
+</div>
+        </div>
+        <div>
+            <p> Or <br> Send your <a href="form.html" class="text-blue-300">contact details</a></p>
+        </div>
+        <div class="mt-2 text-cyan-300">
+        <a href="https://lordicon.com/">Animated Icons by Lordicon.com</a>
+    </div>
+    </footer>
     <script>
         new WOW().init();
     </script>

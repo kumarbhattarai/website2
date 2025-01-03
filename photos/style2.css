@@ -2,6 +2,7 @@
 body{
 padding-left: 1rem;
 padding-right: 1rem;
+color: beige;
 }
     #ab::-webkit-scrollbar{
 display: none;
@@ -24,5 +25,9 @@ img:hover {
  filter: grayscale(0);
  cursor: pointer;
  transform: scale(1.1);
+}
+.underline {
+    text-decoration: underline !important;
+    font-size: 24px;
 }
 /* [@media(max-width:400px)]:w-[66vw] [@media(max-width:400px)]:h-[30vh] */
