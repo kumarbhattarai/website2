@@ -11,7 +11,7 @@ display: none;
 @media(max-width: 400px) {
     img {
         width: 88vw !important;
-        height: 35vh !important; /* Responsive width for small devices */
+        height: 35vh !important; 
     }
     #ab{
         width: 100% !important;
