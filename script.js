@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', (e) => e.preventDefault());
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
   }
@@ -31,16 +32,6 @@ function handleClickOutside(event) {
     }
 }
 
-const h1Element = document.getElementById('scroll-hide');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-        h1Element.style.display = 'none';
-    } else {
-        h1Element.style.display = 'block';
-    }
-});
-
 function scrollDown() {
     window.scrollBy({
         top: 820,
@@ -48,139 +39,55 @@ function scrollDown() {
         behavior: 'smooth',
     });
 }
-window.addEventListener('DOMContentLoaded', () => {
-    // Check if the page has been loaded before
-    if (!localStorage.getItem('isFirstLoad')) {
-        // Set a timeout to hide the loader after 2 seconds
-        setTimeout(() => {
-            document.getElementById('loader').style.display = 'none'; 
-            document.body.classList.remove('loading'); 
-        }, 2000);
+var typed = new Typed(".info", {
+    strings: ["Student", "Backend Developer", "Coder"],
+    typeSpeed: 80,
+    backSpeed: 60,
+    loop: true
+});
 
-        // Mark that the page has been loaded once by setting a flag in localStorage
-        localStorage.setItem('isFirstLoad', 'true');
-    }
-    else{
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
         document.getElementById('loader').style.display = 'none'; 
         document.body.classList.remove('loading'); 
-    }
+    },2000);
 });
 
+const liscence=document.getElementById("lisc")
+date=new Date().getFullYear()
+liscence.innerText=date
+document.addEventListener('scroll', () => {
+    const el = document.getElementById("down");
+    const el2 = document.getElementById('left');
+    const elements = document.querySelectorAll('.right');
 
-const about_me = document.querySelectorAll('.me');
-about_me.forEach((el)=>{
-document.addEventListener('scroll', () => {
-    if (isMobileDevice()) {
-        if (about_me && window.scrollY > 100) {
-            el.classList.add("animate__animated", "animate__fadeInDown", "text-center");
-            el.style.visibility="visible";
-        }
-        else{
-            el.classList.remove("animate__animated", "animate__fadeInDown", "text-center");
-            el.style.visibility="hidden";
-        }
-      }
-      else{
-    if (about_me && window.scrollY > 250) {
-        el.classList.add("mt-2", "animate__animated", "animate__fadeInDown", "text-center");
-        el.style.visibility="visible";
-    }
-    else{
-        el.classList.remove("mt-2", "animate__animated", "animate__fadeInDown", "text-center");
-        el.style.visibility="hidden";
-    }
-}
-});
-});
-const left = document.querySelector('.left');
-document.addEventListener('scroll', () => {
-    if (isMobileDevice()) {
-        if (left && window.scrollY > 300) {
-            left.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-            left.style.visibility="visible";
-        }
-        else{
-            left.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-            left.style.visibility="hidden";
-        }
-      }
-      else{
-            if (left && window.scrollY > 400) {
-                left.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-                left.style.visibility="visible";
-    }
-            else{
-                left.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-                left.style.visibility="hidden";
-    }
-}
-});
-const right = document.querySelector('.right');
-document.addEventListener('scroll', () => {
-    if (isMobileDevice()) {
-        if (right && window.scrollY > 750) {
-            right.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-            right.style.visibility="visible";
-        }
-        else{
-            right.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-            right.style.visibility="hidden";
-        }
-      }
-      else{
-            if (right && window.scrollY > 400) {
-                right.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-                right.style.visibility="visible";
-    }
-            else{
-                right.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-                right.style.visibility="hidden";
-    }
-}
-});
-const mid = document.querySelector('.mid');
-document.addEventListener('scroll', () => {
-    if (isMobileDevice()) {
-        if (mid && window.scrollY > 500) {
-            mid.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-            mid.style.visibility="visible";
-        }
-        else{
-            mid.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-            mid.style.visibility="hidden";
-        }
-      }else{
-    if (mid && window.scrollY > 400) {
-        mid.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-        mid.style.visibility="visible";
-    }
-    else{
-        mid.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-        mid.style.visibility="hidden";
-    }
-}
-});
-const footer = document.querySelector('.footer');
-document.addEventListener('scroll', () => {
-    if (isMobileDevice()) {
-        if (footer && window.scrollY >1750) {
-            footer.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-            footer.style.visibility="visible";
-        }
-        else{
-            footer.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-            footer.style.visibility="hidden";
-        }
-      }else{
-    if (footer && window.scrollY > 1250) {
-        footer.classList.add("animate__animated", "animate__fadeInUp", "text-center");
-        footer.style.visibility="visible";
-    }
-    else{
-        footer.classList.remove("animate__animated", "animate__fadeInUp", "text-center");
-        footer.style.visibility="hidden";
-    }
-}
-});
+    const scrollThresholdDown = isMobileDevice() ? 100 : 200;
+    const scrollThresholdLeft = isMobileDevice() ? 80 : 200;
+    const scrollThresholdRight = isMobileDevice() ? 150 : 200;
 
+    if (el && window.scrollY > scrollThresholdDown) {
+        el.classList.add("animate__animated", "animate__slideInDown");
+        el.style.visibility = "visible";
+    } else {
+        el.classList.remove("animate__animated", "animate__slideInDown");
+        el.style.visibility = "hidden";
+    }
 
+    if (el2 && window.scrollY > scrollThresholdLeft) {
+        el2.classList.add("animate__animated", "animate__zoomIn", "text-center");
+        el2.style.visibility = "visible";
+    } else {
+        el2.classList.remove("animate__animated", "animate__zoomIn", "text-center");
+        el2.style.visibility = "hidden";
+    }
+
+    elements.forEach(el3 => {
+        if (window.scrollY > scrollThresholdRight) {
+            el3.classList.add("animate__animated", "animate__pulse");
+            el3.style.visibility = "visible";
+        } else {
+            el3.classList.remove("animate__animated", "animate__pulse");
+            el3.style.visibility = "hidden";
+        }
+    });
+});
