@@ -66,10 +66,10 @@ document.addEventListener('scroll', () => {
     const scrollThresholdRight = isMobileDevice() ? 150 : 200;
 
     if (el && window.scrollY > scrollThresholdDown) {
-        el.classList.add("animate__animated", "animate__slideInDown");
+        el.classList.add("animate__animated", "animate__slideInDown","text-left");
         el.style.visibility = "visible";
     } else {
-        el.classList.remove("animate__animated", "animate__slideInDown");
+        el.classList.remove("animate__animated", "animate__slideInDown","text-left");
         el.style.visibility = "hidden";
     }
 
@@ -83,10 +83,10 @@ document.addEventListener('scroll', () => {
 
     elements.forEach(el3 => {
         if (window.scrollY > scrollThresholdRight) {
-            el3.classList.add("animate__animated", "animate__pulse");
+            el3.classList.add("animate__animated", "animate__pulse", "text-left");
             el3.style.visibility = "visible";
         } else {
-            el3.classList.remove("animate__animated", "animate__pulse");
+            el3.classList.remove("animate__animated", "animate__pulse", "text-left");
             el3.style.visibility = "hidden";
         }
     });
