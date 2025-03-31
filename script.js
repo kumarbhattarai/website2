@@ -56,6 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
 const liscence=document.getElementById("lisc")
 date=new Date().getFullYear()
 liscence.innerText=date
+
 document.addEventListener('scroll', () => {
     const el = document.getElementById("down");
     const el2 = document.getElementById('left');
