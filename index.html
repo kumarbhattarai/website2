@@ -10,6 +10,11 @@
     <meta name="theme-color" content="#0f172a">
     <title>Kumar Bhattarai - Portfolio Profile</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="logok.webp">
+    <link rel="shortcut icon" href="logok.webp">
+    <link rel="apple-touch-icon" href="logok.webp">
+
     <link rel="canonical" href="https://www.kumarbhattarai.com.np/">
     <meta property="og:title" content="Kumar Bhattarai - Portfolio Profile">
     <meta property="og:description" content="Explore Kumar Bhattarai's portfolio, achievements, and skills. Connect with me today!">
@@ -56,9 +61,15 @@
 </head>
 
 <body class="bg-gray-900 min-h-full loading">
-    <!-- CSS-based spinner instead of 94 KiB Lottie library -->
-    <div id="loader" class="flex items-center justify-center h-screen">
-        <div class="spinner"></div>
+    <div id="loader">
+        <lottie-player
+            src="https://lottie.host/2e862a7b-349a-4cab-8c7d-a193e41ac514/z1XOsukWtV.json"
+            background="##ffffff"
+            speed="1"
+            style="width: 20vw; height: 20vh"
+            loop
+            autoplay
+        ></lottie-player>
     </div>
 
     <nav class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
@@ -227,6 +238,8 @@
             document.body.appendChild(script);
         }
     </script>
+    <!-- Restore Lottie player (looks much better) -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js" defer></script>
     <script src="script.js" defer></script>
 </body>
 </html>

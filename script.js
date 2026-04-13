@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.getElementById("loader").style.display = "none";
     document.body.classList.remove("loading");
-  }, 1200);
+  }, 2000);
 });
 
 const liscence = document.getElementById("lisc");
