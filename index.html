@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Chatbot, BotPress, Personal Website">
+    <meta name="keywords" content="Kumar Bhattarai, Portfolio, Professional Profile, Developer, Programmer, Backend Developer">
     <meta name="author" content="Kumar Bhattarai">
-    <title>Kumar Bhattarai - Portfolio Profile</title>
-    <meta name="description" content="Discover Kumar Bhattarai's portfolio, professional achievements, and projects. Learn more about my expertise and connect with me today!">
-    <meta name="keywords" content="Kumar Bhattarai, Portfolio, Professional Profile, Developer, Programmer">
     <meta name="robots" content="index, follow">
+    <meta name="description" content="Discover Kumar Bhattarai's portfolio, professional achievements, and projects. Learn more about my expertise and connect with me today!">
+    <meta name="theme-color" content="#0f172a">
+    <title>Kumar Bhattarai - Portfolio Profile</title>
+
     <link rel="canonical" href="https://www.kumarbhattarai.com.np/">
     <meta property="og:title" content="Kumar Bhattarai - Portfolio Profile">
     <meta property="og:description" content="Explore Kumar Bhattarai's portfolio, achievements, and skills. Connect with me today!">
-    <meta property="og:image" content="https://www.kumarbhattarai.com.np/profile-logok.png">
+    <meta property="og:image" content="https://www.kumarbhattarai.com.np/logok.webp">
     <meta property="og:url" content="https://www.kumarbhattarai.com.np/">
 
-    <title>Kumar Bhattarai - Portfolio Profile</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <script>
-        new WOW().init();
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
+    <!-- Preload LCP hero image (biggest performance win) -->
+    <link rel="preload" as="image" href="img17.webp" fetchpriority="high">
+
+    <!-- Google Fonts with font-display=swap (already in URL) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Animate.css loaded non-blocking -->
+    <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></noscript>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.css">
-    <script src="https://cdn.lordicon.com/lordicon.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ps38gkpejg");
-</script>
+
+    <!-- Microsoft Clarity (async, non-blocking) -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "ps38gkpejg");
+    </script>
 </head>
 
 <body class="bg-gray-900 min-h-full loading">
@@ -53,17 +55,18 @@
             loop
             autoplay
         ></lottie-player>
-    </div> 
-    <navbar class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
+    </div>
+
+    <nav class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
         <ul class="flex items-center justify-between px-6 py-4">
             <li>
-                    <img class="logo w-10 h-10 rounded-full absolute left-[15px] top-[19px]" src="logok.png" alt="Logo">
-                
+                <img class="logo w-10 h-10 rounded-full absolute left-[15px] top-[19px]"
+                     src="logok.webp" alt="Kumar Bhattarai logo"
+                     width="40" height="40" fetchpriority="high">
             </li>
-            
-    
+
             <div class="flex gap-14 ml-auto">
-                 <li class="hideOnMob"><a href="index.html">
+                <li class="hideOnMob"><a href="index.html">
                     <div class="ml-2">
                         <lord-icon
                         src="https://cdn.lordicon.com/rpvomrgr.json"
@@ -72,8 +75,7 @@
                         style="width:30px;height:30px">
                     </lord-icon> </div>
                     Home
-                    
-             </a></li>
+                </a></li>
 
                 <li class="hideOnMob"><a href="gallery.html">
                     <div class="ml-3">
@@ -81,10 +83,9 @@
                         src="https://cdn.lordicon.com/rdabbukg.json"
                         trigger="hover"
                         style="width:30px;height:30px">
-                    </lord-icon></div>
+                        </lord-icon></div>
                     Gallery
-          
-            </a></li>
+                </a></li>
 
                 <li class="hideOnMob"><a href="project.html">
                     <div class="ml-6">
@@ -95,7 +96,7 @@
         state="in-unfold"
         style="width:30px;height:30px">
     </lord-icon></div>
-                    Projects 
+                    Projects
                 </a></li>
                 <li class="hideOnMob" onclick="scrollDown()"><a href="#">
                     <div class="ml-6">
@@ -105,9 +106,9 @@
                         style="width:30px;height:30px">
                     </lord-icon> </div>
                     About me
- 
+
                 </a></li>
-            
+
                 <li onclick="showSidebar()" class="hideOnPc" >
                     <a href="#" class="flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000">
@@ -117,7 +118,7 @@
                 </li>
             </div>
         </ul>
-    
+
         <ul class="sidebar fixed top-0 right-0 h-screen w-[0px] flex flex-col items-start justify-start space-y-2 text-slate-300 nav">
             <li onclick="closeBar()">
                 <a href="#">
@@ -130,77 +131,83 @@
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="project.html">Projects</a></li>
             <li onclick="closeBar(); scrollDown();"><a href="#">About me</a></li>
-        
         </ul>
-    </navbar>
+    </nav>
 
-    <div class="relative bg-cover bg-center p-[30vw] h-screen" style="background-image: url('img17.jpg');">
+    <!-- Hero section using WebP background -->
+    <div class="relative bg-cover bg-center p-[30vw] h-screen" style="background-image: url('img17.webp');">
     </div>
 
-  <div class="flex flex-col items-center gap-6 text-slate-300 mx-4 md:flex-row md:items-center">
-    <div class="w-40 h-40 mt-6 md:w-52 md:h-52 md:ml-12 lg:ml-44 flex-shrink-0 md:mt-10" id="left">
-      <img src="my_img.jpg" alt="my image" class="rounded-full object-cover w-full h-full shadow-[0px_0px_15px_5px_rgba(0,0,0,1)]">
-    </div>
-  
+    <div class="flex flex-col items-center gap-6 text-slate-300 mx-4 md:flex-row md:items-center">
+        <div class="w-40 h-40 mt-6 md:w-52 md:h-52 md:ml-12 lg:ml-44 flex-shrink-0 md:mt-10" id="left">
+            <img src="my_img.webp" alt="Kumar Bhattarai profile photo"
+                 class="rounded-full object-cover w-full h-full shadow-[0px_0px_15px_5px_rgba(0,0,0,1)]"
+                 width="208" height="208" loading="lazy">
+        </div>
 
-    <div class="text-left ml-1 md:ml-4 lg:ml-20 md:mt-6">
 
-      <p class="text-2xl font-bold text-blue-300 text-left" id="down">About Me</p>
-      <div><span class="text-lg font-bold text-blue-300 text-left info"></span></div>
-      <p class="text-base right">
-        Hi, I am Kumar Bhattarai, currently pursuing a bachelor's degree in Information Technology with an interest in backend development. Outside of this, I enjoy exploring nature and learning about diverse cultures.  
-        I completed my SEE from my hometown in 2020, where I chose Accountancy as an optional subject.  
-        I completed my high school graduation taking the science stream with Computer Science as an optional subject. I learned C programming along with some basics of PHP and database there.  
-        I am currently pursuing a bachelor's degree in Information Technology from Bhaktapur Multiple Campus. I chose CSIT as it is a renowned course among science faculties and offers the flexibility to pursue further studies in physics as well. Currently, I am focused on backend development with Node.js and enhancing my skills in this field.
-      </p>
+        <div class="text-left ml-1 md:ml-4 lg:ml-20 md:mt-6">
+            <p class="text-2xl font-bold text-blue-300 text-left" id="down">About Me</p>
+            <div><span class="text-lg font-bold text-blue-300 text-left info"></span></div>
+            <p class="text-base right">
+                Hi, I am Kumar Bhattarai, currently pursuing a bachelor's degree in Information Technology with an interest in backend development. Outside of this, I enjoy exploring nature and learning about diverse cultures.
+                I completed my SEE from my hometown in 2020, where I chose Accountancy as an optional subject.
+                I completed my high school graduation taking the science stream with Computer Science as an optional subject. I learned C programming along with some basics of PHP and database there.
+                I am currently pursuing a bachelor's degree in Information Technology from Bhaktapur Multiple Campus. I chose CSIT as it is a renowned course among science faculties and offers the flexibility to pursue further studies in physics as well. Currently, I am focused on backend development with Node.js and enhancing my skills in this field.
+            </p>
+        </div>
     </div>
-  </div>
-  
-          
-          <div class="ml-6 md:ml-[315px] lg:ml-[490px] mt-4 text-slate-200">
-           <p class="right">Chat with <a href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/01/03/09/20250103094758-FOPM1O0U.json" target="_blank" class="text-blue-300 font-bold text-xl"> chatbot</a> to know more.</p>
-                </div>
+
+    <div class="ml-6 md:ml-[315px] lg:ml-[490px] mt-4 text-slate-200">
+        <p class="right">Chat with <a href="https://cdn.botpress.cloud/webchat/v2.3/shareable.html?configUrl=https://files.bpcontent.cloud/2025/01/03/09/20250103094758-FOPM1O0U.json" target="_blank" class="text-blue-300 font-bold text-xl"> chatbot</a> to know more.</p>
+    </div>
+
     <div class="flex align-center justify-center">
-<iframe src="photos/index2.html" width="100%" height="600px" frameborder="0"></iframe>
+        <iframe src="photos/index2.html" width="100%" height="600px" frameborder="0"></iframe>
     </div>
 
     <footer class="footer bg-gradient-to-r from-gray-950 via-gray-900 to-gray-950 rounded-lg text-gray-200 p-[5px] text-center mt-[5px]">
-
-        
-        
         <div>
             <h2 class="text-2xl font-bold">Contacts</h2>
-          <p>eureshbhattarai666@gmail.com</p>
-          <div>
-          <span class="flex items-center justify-center space-x-4">
-          <a href="https://www.facebook.com/kumar.bhattarai.9216" target="_blank"><lord-icon
-            src="https://cdn.lordicon.com/xowsaqcr.json"
-            trigger="hover"
-            state="hover-draw"
-            style="width:40px;height:40px">
-        </lord-icon></a>
-        <a href="https://www.instagram.com/kumarbhattarai_analien/profilecard/?igsh=MzdjZ21vYmgxNmF1" target="_blank"><lord-icon
-            src="https://cdn.lordicon.com/dbugezxr.json"
-            trigger="hover"
-            state="hover-rotate"
-            style="width:40px;height:40px">
-        </lord-icon></a>
+            <p>eureshbhattarai666@gmail.com</p>
+            <div>
+                <span class="flex items-center justify-center space-x-4">
+                    <a href="https://www.facebook.com/kumar.bhattarai.9216" target="_blank"><lord-icon
+                        src="https://cdn.lordicon.com/xowsaqcr.json"
+                        trigger="hover"
+                        state="hover-draw"
+                        style="width:40px;height:40px">
+                    </lord-icon></a>
+                    <a href="https://www.instagram.com/kumarbhattarai_analien/profilecard/?igsh=MzdjZ21vYmgxNmF1" target="_blank"><lord-icon
+                        src="https://cdn.lordicon.com/dbugezxr.json"
+                        trigger="hover"
+                        state="hover-rotate"
+                        style="width:40px;height:40px">
+                    </lord-icon></a>
 
-        <a href="https://www.linkedin.com/public-profile/settings" target="_blank"><lord-icon
-            src="https://cdn.lordicon.com/kozzgyfy.json"
-            trigger="hover"
-            style="width:40px;height:40px">
-        </lord-icon></a>
+                    <a href="https://www.linkedin.com/public-profile/settings" target="_blank"><lord-icon
+                        src="https://cdn.lordicon.com/kozzgyfy.json"
+                        trigger="hover"
+                        style="width:40px;height:40px">
+                    </lord-icon></a>
 
-        <a href="https://github.com/kumarbhattarai" target="_blank"><img src="github.png" alt="error" width="40px" height="40px"></a>
-    </span>
-</div>
+                    <a href="https://github.com/kumarbhattarai" target="_blank">
+                        <img src="github.webp" alt="GitHub profile" width="40" height="40" loading="lazy">
+                    </a>
+                </span>
+            </div>
         </div>
         <div>
             <p> Or <br> Send your <a href="form.html" class="text-blue-300">contact details</a></p>
         </div>
         <p class="inline"> copyright &copy <p id="lisc" class="inline">date</p>  Kumar Bhattarai | All Rights Reserved</p>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Scripts deferred so they don't block rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

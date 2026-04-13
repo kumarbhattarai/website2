@@ -1,4 +1,9 @@
 document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+// Initialize WOW.js animations (script is deferred so DOM is ready)
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof WOW !== 'undefined') new WOW().init();
+});
 function isMobileDevice() {
     return /Mobi|Android/i.test(navigator.userAgent);
   }

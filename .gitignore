@@ -1,0 +1,9 @@
+# Node.js dependencies (used for image optimization only - not part of the site)
+node_modules/
+package-lock.json
+
+# Image optimization script (dev tool, not deployed)
+optimize-images.mjs
+
+# VS Code
+.vscode/
