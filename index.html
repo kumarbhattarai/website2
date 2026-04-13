@@ -32,7 +32,6 @@
 
     <!-- Critical CSS inline -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="web.css">
 
     <!-- DNS Prefetch for external resources -->
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
@@ -44,26 +43,22 @@
     <!-- Tailwind CDN loaded async to prevent render blocking -->
     <script async src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Microsoft Clarity (async, non-blocking) -->
+    <!-- Microsoft Clarity (disabled on mobile for performance) -->
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "ps38gkpejg");
+        if (!/Mobi|Android/i.test(navigator.userAgent)) {
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "ps38gkpejg");
+        }
     </script>
 </head>
 
 <body class="bg-gray-900 min-h-full loading">
-    <div id="loader">
-        <lottie-player
-            src="https://lottie.host/2e862a7b-349a-4cab-8c7d-a193e41ac514/z1XOsukWtV.json"
-            background="##ffffff"
-            speed="1"
-            style="width: 20vw; height: 20vh"
-            loop
-            autoplay
-        ></lottie-player>
+    <!-- CSS-based spinner instead of 94 KiB Lottie library -->
+    <div id="loader" class="flex items-center justify-center h-screen">
+        <div class="spinner"></div>
     </div>
 
     <nav class="font-bold text-xl bg-transparent absolute top-0 right-0 z-10 nav2 w-full">
@@ -213,9 +208,25 @@
     </footer>
 
     <!-- Scripts deferred so they don't block rendering -->
+    <!-- Typed.js deferred (281ms, but essential for hero section) -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
-    <script src="https://cdn.lordicon.com/lordicon.js" defer></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js" defer></script>
+    <!-- Lord-icon deferred (441ms, optimize with conditional loading) -->
+    <script>
+        // Load lord-icon only after page interactive to save mobile performance
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                const script = document.createElement('script');
+                script.src = 'https://cdn.lordicon.com/lordicon.js';
+                script.async = true;
+                document.body.appendChild(script);
+            });
+        } else {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.lordicon.com/lordicon.js';
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    </script>
     <script src="script.js" defer></script>
 </body>
 </html>
