@@ -1,0 +1,24 @@
+# Allow all search engines to index and crawl
+User-agent: *
+Allow: /
+
+# Specific rules for better crawling efficiency
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.gitignore
+
+# Sitemap location
+Sitemap: https://www.kumarbhattarai.com.np/sitemap.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
+
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
